@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
     $('#carouselButton').click(() => {
         if($('#carouselButton').children("span").hasClass('fa-pause')) {
             $('#mycarousel').carousel('pause');
@@ -10,4 +10,13 @@ $(document).ready(function() {
             $('#carouselButton').children("span").addClass('fa-pause');
         }
     })
+});
+
+$(document).ready(() => {
+    $('#login-btn').click(() => {
+        $('#loginModal').modal('show');
+    });
+    $('#reserve-btn').click(() => {
+        $('#reserveTableModal').modal('show');
+    });
 });
